@@ -29,9 +29,71 @@ body {
   cursor: pointer;
   opacity: 0.3;
 }
+.aceBtn {
+}
 
-#hidden {
-  transition: all 0.3s ease;
+#revealed {
+  transition-duration: 0.5s;
+  transition-property: all;
+  transition-timing-function: ease-in;
+  opacity: 1;
+  animation: transform;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+}
+.aceTransition {
+  background-image: url("assets/images/cards/spades/ace.png");
+  animation-name: animation;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes transform {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animation {
+  0% {
+    margin: 0 0;
+  }
+  10% {
+    margin-right: -10px;
+  }
+  20% {
+    margin-right: -20px;
+  }
+  30% {
+    margin-right: -30px;
+  }
+  40% {
+    margin-right: -40px;
+  }
+  50% {
+    margin-right: -50px;
+  }
+  60% {
+    margin-right: -40px;
+  }
+  70% {
+    margin-right: -30px;
+  }
+  80% {
+    margin-right: -20px;
+  }
+  90% {
+    margin-right: -10px;
+  }
+  100% {
+    margin: 0 0;
+  }
 }
 
 .card {
