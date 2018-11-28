@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,500,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+header {
+  background: crimson;
+  padding: 30px;
+}
+
+header > h1 {
+  color: white;
+  text-align: center;
+  font-size: 42px;
+}
+
+body {
+  background-color: #303030;
+}
+
+.start {
+  text-align: center;
+}
+#hidden:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+#hidden {
+  transition: all 0.3s ease;
+}
+
+.card {
+  margin: 0 -40px;
+  display: inline-block;
+  margin-bottom: 200px;
+  position: relative;
+  top: 100px;
+  vertical-align: center;
+  text-align: center;
+
+  box-shadow: 0px -200px 100px 0px rgba(30, 30, 30, 0.6) inset,
+    -3px 3px 10px 5px rgba(30, 30, 30, 0.6);
+}
